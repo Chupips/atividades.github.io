@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento para Banho e Tosa</title>
+    <style>
+        /* Estilos básicos para melhorar a legibilidade */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        form {
+            max-width: 800px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group label, .radio-group label {
+            width: auto; /* Reseta a largura para checkboxes e radios */
+            text-align: left;
+            margin-right: 15px;
+        }
+         .checkbox-group input, .radio-group input {
+            margin-right: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#">Home</a>
+
+    <h1>Agendamento para banho e tosa</h1>
+    <p><strong>Faça o seu agendamento com pelo menos 48 horas de antecedência</strong></p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Identificação do dono do animal</legend>
+            <div class="input-group">
+                <label for="dono-nome">Nome:</label>
+                <input type="text" id="dono-nome" name="dono_nome" placeholder="Digite o nome completo do dono do animal" size="40">
+            </div>
+            <div class="input-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço" size="50">
+            </div>
+            <div class="input-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX" size="10">
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o endereço de email" size="40">
+            </div>
+            <div class="input-group">
+                <label for="tel">Tel/Cel:</label>
+                <input type="tel" id="tel" name="tel" placeholder="99 99999-9999" size="15">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Animal</legend>
+            <div class="input-group">
+                <label for="animal-nome">Nome:</label>
+                <input type="text" id="animal-nome" name="animal_nome" placeholder="Digite o nome do animal" size="30">
+            </div>
+            <div class="input-group radio-group">
+                <label>Porte do cão:</label>
+                <input type="radio" id="porte-pequeno" name="porte" value="pequeno">
+                <label for="porte-pequeno">pequeno</label>
+                <input type="radio" id="porte-medio" name="porte" value="medio">
+                <label for="porte-medio">médio</label>
+                <input type="radio" id="porte-grande" name="porte" value="grande">
+                <label for="porte-grande">grande</label>
+            </div>
+            <div class="input-group">
+                <label for="tipo-tosa">Tipo de tosa:</label>
+                <select id="tipo-tosa" name="tipo_tosa">
+                    <option value="nenhuma">Nenhuma</option>
+                    <option value="higiencia">Tosa Higiênica</option>
+                    <option value="raca">Tosa da Raça</option>
+                    <option value="tesoura">Tosa na Tesoura</option>
+                    <option value="maquina">Tosa na Máquina</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="obs">Observações:</label>
+                <textarea id="obs" name="observacoes" rows="4" cols="40" placeholder="Digite alguma informação sobre o animal"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Horário - (Não atendemos de domingo e segunda-feira)</legend>
+            <div class="input-group checkbox-group">
+                <label style="width: auto;">Indique os dias da semana de sua preferência:</label>
+                <input type="checkbox" id="terca" name="dia_semana" value="terca">
+                <label for="terca">Terça-feira</label>
+                <input type="checkbox" id="quarta" name="dia_semana" value="quarta">
+                <label for="quarta">Quarta-feira</label>
+                <input type="checkbox" id="quinta" name="dia_semana" value="quinta">
+                <label for="quinta">Quinta-feira</label>
+                <input type="checkbox" id="sexta" name="dia_semana" value="sexta">
+                <label for="sexta">Sexta-feira</label>
+                <input type="checkbox" id="sabado" name="dia_semana" value="sabado">
+                <label for="sabado">Sábado-feira</label>
+            </div>
+            <div class="input-group">
+                <label for="horario1">Primeira opção de horário:</label>
+                <input type="date" id="horario1" name="horario1">
+            </div>
+            <div class="input-group">
+                <label for="horario2">Segunda opção de horário:</label>
+                <input type="date" id="horario2" name="horario2">
+            </div>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
