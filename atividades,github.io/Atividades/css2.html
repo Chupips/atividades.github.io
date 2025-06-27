@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando HTML</title>
+    <style>
+        /* --- Estilos Gerais --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* --- Container Principal --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* --- Estilo dos Cabeçalhos (Barras de Título) --- */
+        h1, h2 {
+            font-family: 'Trebuchet MS', sans-serif;
+            font-weight: normal;
+            color: white;
+            background-color: #8B4513; /* Cor marrom/sépia */
+            padding: 10px 15px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            border-bottom: 1px solid #6D3710;
+        }
+        
+        h2 {
+            font-size: 1.4em;
+            margin-top: 20px; /* Espaçamento entre as seções */
+        }
+
+        /* --- Área de Conteúdo --- */
+        .content {
+            padding: 15px 20px;
+        }
+        
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* --- Estilo para destacar as tags HTML --- */
+        code {
+            font-weight: bold;
+            color: #D2691E; /* Cor chocolate para destaque */
+            font-family: Consolas, 'Courier New', monospace;
+        }
+
+        /* --- Estilo das Imagens --- */
+        .content-image {
+            display: block;
+            max-width: 60%;
+            margin: 20px auto;
+            border: 6px solid #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Estudando HTML</h1>
+        
+        <div class="content">
+            <p>
+                Nossos estudos começaram falando a respeito de um item muito sério que é a organização. Isso porque a linguagem HTML é responsável apenas pela marcação dos elementos na janela do navegador. O HTML não cria nada, ele manda buscar ou utiliza as letrinhas que você digita.
+            </p>
+        </div>
+
+        <h2>Parágrafos</h2>
+        <div class="content">
+            <img class="content-image" src="https://images.pexels.com/photos/357577/pexels-photo-357577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem de um documento antigo e amarelado">
+            <p>
+                Para colocarmos parágrafos, usamos os elementos <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code>. Para fazer uma quebra de linha, mantendo o mesmo parágrafo, usamos o elemento <code>&lt;br&gt;</code>. Temos ainda parágrafos especiais, denominados títulos, cabeçalhos ou headings em que são usados elementos de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> e seus respectivos fechamentos de <code>&lt;/h1&gt;</code> a <code>&lt;/h6&gt;</code>.
+            </p>
+        </div>
+
+        <h2>Imagens</h2>
+        <div class="content">
+             <img class="content-image" src="https://images.pexels.com/photos/769733/pexels-photo-769733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fotografia antiga em preto e branco de uma criança">
+            <p>
+                Uma imagem aparece na janela do navegador pelo uso do elemento <code>&lt;img&gt;</code>. Esse elemento possui o atributo <code>"src"</code>, responsável pela localização da imagem. Para trabalhar melhor com a imagem, você pode colocá-la dentro das tags de marcação de parágrafo.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
